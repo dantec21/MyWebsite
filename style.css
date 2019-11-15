@@ -19,8 +19,8 @@ h1{
 }
 section {
   background-color: white;
-  width: 30%;
-  grid-area: section;
+
+
   margin: auto;
 }
 img {
@@ -37,7 +37,7 @@ a{
 /* nav start */
 
 nav ul li a:link, a:visited {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 nav ul {
@@ -179,14 +179,82 @@ nav ul li:active {
 .heading{
   color: black;
 }
+/* grid below */
+/* .container {
+  width: 100vw;
+    height: 100vh;
+  display: grid;
+  grid-template-columns: 400px 400px 400px ;
+  grid-template-rows: 400px 400px 400px;
+  grid-template-areas: :
+  "header header header"
+  "current about throwback"
+  "footer footer footer";
+}
+.child{
+  font-size: 2em;
+  padding: 10px;
+  text-align: center;
+  grid-area: child;
+}
+.header{
+  grid-area: header;
+}
+.about{
+  grid-area:about;
+}
+.current{
+  grid-area:current;
+}
+.throwback{
+  grid-area:throwback;
+}
+.footer{
+  grid-area:footer;
+}
+*/
 .container {
   width: 100vw;
     height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 364px 1fr ;
-  grid-template-rows: 1fr 144px 1fr;
+  grid-template-columns: 1fr 500px 1fr ;
+  grid-template-rows: 100px 600px 500px;
   grid-template-areaS:
   "header header header"
   "aside main aside2"
   "footer footer footer";
-  
+
+
+}
+
+.child{
+
+
+  padding: 10px;
+  text-align: center;
+  grid-area: child;
+
+
+}
+.header{
+  grid-area: header;
+}
+.about{
+  grid-area:main;
+}
+.current{
+  grid-area:aside;
+  color: black;
+}
+.throwback{
+  grid-area:aside2;
+}
+.footer{
+  grid-area:footer;
+}
+.homepage p{
+  font-size: 20px;
+}
+.aboutmeimage{
+  width: 30%
+}
