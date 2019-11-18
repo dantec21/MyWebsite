@@ -16,10 +16,7 @@ p{
 }
 
 
-section {
-  background-color: white;
-  margin: auto;
-}
+
 img {
   float: bottom;
   margin-left: 15px;
@@ -179,51 +176,31 @@ nav ul li:active {
 /* grid below */
 /* .container {
   width: 100vw;
-    height: 100vh;
-  display: grid;
-  grid-template-columns: 400px 400px 400px ;
-  grid-template-rows: 400px 400px 400px;
-  grid-template-areas: :
-  "header header header"
-  "current about throwback"
-  "footer footer footer";
-}
-.child{
-  font-size: 2em;
-  padding: 10px;
-  text-align: center;
-  grid-area: child;
-}
-.header{
-  grid-area: header;
-}
-.about{
-  grid-area:about;
-}
-.current{
-  grid-area:current;
-}
-.throwback{
-  grid-area:throwback;
-}
-.footer{
-  grid-area:footer;
-}
-*/
-.container {
-  width: 100vw;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 400px 1fr ;
-  grid-template-rows: 600px 500px;
+  grid-template-rows: 90px 600px 500px;
   grid-template-areaS:
-
+  "header header header"
   "aside main aside2"
   "footer footer footer";
 
 
-}
+} */
+.container{
 
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 90px 600px 500px;
+grid-column-gap: 10px;
+grid-row-gap: 0px;
+
+grid-template-areas:
+"header header header"
+"aside main aside2"
+"footer footer footer";
+
+}
 .child{
 
 
@@ -238,13 +215,16 @@ nav ul li:active {
 }
 .about{
   grid-area:main;
+  background: white;
 }
 .current{
   grid-area:aside;
   color: black;
+  background: white;
 }
 .throwback{
   grid-area:aside2;
+  background: white;
 }
 .footer{
   grid-area:footer;
@@ -256,10 +236,7 @@ nav ul li:active {
   width: 64%;
 }
 .andrewluck1{
-  width: 25%;
-}
-.currentsection{
-  width: 75%;
+  width: 80%;
 }
 .andrewluck2{
   width: 52%;
@@ -287,4 +264,7 @@ nav ul li:active {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   display: grid;
+}
+.chaseyoung{
+  width: 25%;
 }
