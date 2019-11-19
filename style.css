@@ -191,7 +191,7 @@ nav ul li:active {
 
 display: grid;
 grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 90px 600px 500px;
+grid-template-rows: 50px 600px 50px;
 grid-column-gap: 10px;
 grid-row-gap: 0px;
 
@@ -242,13 +242,15 @@ grid-template-areas:
   width: 52%;
 }
 .osustadium{
-  width: 60%;
+  width: 80%;
 }
 .throwbacksection{
   width: 75%;
 }
 .usersection{
-  width: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
 }
 .throwbackcontainer{
   grid-template-columns: 1fr;
@@ -266,5 +268,92 @@ grid-template-areas:
   display: grid;
 }
 .chaseyoung{
-  width: 25%;
+  width: 80%;
+}
+/* user grid */
+.usergrid{
+
+display: grid;
+grid-template-columns: 1fr 1100px 1fr;
+grid-template-rows: 90px 300px 50px;
+grid-column-gap: 10px;
+grid-row-gap: 0px;
+grid-template-areas:
+"header header header"
+"aside main aside2"
+"footer footer footer";
+
+}
+.child{
+
+
+  padding: 10px;
+  text-align: center;
+  grid-area: child;
+
+
+}
+.userheader{
+  grid-area: header;
+}
+.usermain{
+  grid-area:main;
+  background: white;
+}
+.aside{
+  grid-area:aside;
+  color: black;
+  background: white;
+}
+.aside{
+  grid-area:aside2;
+  background: white;
+}
+.userfooter{
+  grid-area:footer;
+}
+/* current grid below */
+.currentgrid{
+
+display: grid;
+grid-template-columns: 1fr 1100px 1fr;
+grid-template-rows: 90px 760px 50px;
+grid-column-gap: 10px;
+grid-row-gap: 0px;
+grid-template-areas:
+"currentheader currentheader currentheader"
+"currentaside currentmain currentaside2"
+"currentfooter currentfooter currentfooter";
+
+}
+.child{
+
+
+  padding: 10px;
+  text-align: center;
+  grid-area: child;
+
+
+}
+.currentheader{
+  grid-area: currentheader;
+}
+.currentmain{
+  grid-area:main;
+  background: white;
+}
+.aside{
+  grid-area:aside;
+  color: black;
+  background: white;
+}
+.aside{
+  grid-area:aside2;
+  background: white;
+}
+.currentfooter{
+  grid-area:footer;
+}
+.andrewluck12{
+  width: 20%;
 }
