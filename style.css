@@ -187,7 +187,8 @@ nav ul li:active {
 
 
 } */
-.container{
+/* index grid */
+.indexgrid{
 
 display: grid;
 grid-template-columns: repeat(3, 1fr);
@@ -201,32 +202,24 @@ grid-template-areas:
 "footer footer footer";
 
 }
-.child{
 
-
-  padding: 10px;
-  text-align: center;
-  grid-area: child;
-
-
-}
-.header{
+.indexheader{
   grid-area: header;
 }
-.about{
+.indexabout{
   grid-area:main;
   background: white;
 }
-.current{
+.indexcurrent{
   grid-area:aside;
   color: black;
   background: white;
 }
-.throwback{
+.indexthrowback{
   grid-area:aside2;
   background: white;
 }
-.footer{
+.indexfooter{
   grid-area:footer;
 }
 .homepage{
@@ -244,9 +237,7 @@ grid-template-areas:
 .osustadium{
   width: 80%;
 }
-.throwbacksection{
-  width: 75%;
-}
+
 .usersection{
   width: 100%;
   text-align: center;
@@ -272,7 +263,6 @@ grid-template-areas:
 }
 /* user grid */
 .usergrid{
-
 display: grid;
 grid-template-columns: 1fr 1100px 1fr;
 grid-template-rows: 90px 300px 50px;
@@ -282,16 +272,6 @@ grid-template-areas:
 "header header header"
 "aside main aside2"
 "footer footer footer";
-
-}
-.child{
-
-
-  padding: 10px;
-  text-align: center;
-  grid-area: child;
-
-
 }
 .userheader{
   grid-area: header;
@@ -312,7 +292,8 @@ grid-template-areas:
 .userfooter{
   grid-area:footer;
 }
-/* current grid below */
+
+/* current grid below*/
 .currentgrid{
 
 display: grid;
@@ -321,25 +302,17 @@ grid-template-rows: 90px 760px 50px;
 grid-column-gap: 10px;
 grid-row-gap: 0px;
 grid-template-areas:
-"currentheader currentheader currentheader"
-"currentaside currentmain currentaside2"
-"currentfooter currentfooter currentfooter";
+"header header header"
+"aside main aside2"
+"footer footer footer";
 
 }
-.child{
 
-
-  padding: 10px;
-  text-align: center;
-  grid-area: child;
-
-
-}
 .currentheader{
-  grid-area: currentheader;
+  grid-area: header;
 }
 .currentmain{
-  grid-area:main;
+  grid-area: main;
   background: white;
 }
 .aside{
@@ -351,9 +324,42 @@ grid-template-areas:
   grid-area:aside2;
   background: white;
 }
-.currentfooter{
-  grid-area:footer;
+.footer{
+  grid-area: footer;
 }
 .andrewluck12{
   width: 20%;
+}
+/*throwback grid below*/
+.tbgrid{
+display: grid;
+grid-template-columns: 1fr 1100px 1fr;
+grid-template-rows: 90px 760px 50px;
+grid-column-gap: 10px;
+grid-row-gap: 0px;
+grid-template-areas:
+"header header header"
+"aside main side2"
+"footer footer footer";
+text-align: center;
+}
+
+.tbheader{
+  grid-area: header;
+}
+.tbmain{
+  grid-area:main;
+  background: white;
+}
+.tbaside{
+  grid-area:aside;
+  color: black;
+  background: white;
+}
+.tbaside{
+  grid-area:aside2;
+  background: white;
+}
+.tbfooter{
+  grid-area:footer;
 }
