@@ -15,7 +15,9 @@ p{
   color: black;
 }
 
-
+section{
+  background: white;
+}
 
 img {
   float: bottom;
@@ -334,7 +336,7 @@ grid-template-areas:
 .tbgrid{
 display: grid;
 grid-template-columns: 1fr 1100px 1fr;
-grid-template-rows: 90px 760px 50px;
+grid-template-rows: 90px 800px 50px;
 grid-column-gap: 10px;
 grid-row-gap: 0px;
 grid-template-areas:
