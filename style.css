@@ -194,12 +194,12 @@ nav ul li:active {
 
 display: grid;
 grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 50px 600px 50px;
+grid-template-rows: 600px 50px;
 grid-column-gap: 10px;
 grid-row-gap: 0px;
 
 grid-template-areas:
-"header header header"
+
 "aside main aside2"
 "footer footer footer";
 
@@ -369,8 +369,11 @@ text-align: center;
   color: white;
 }
 /* media query */
-@media only(min-width:500px){
+@media (min-width:600px){
   nav ul{
     position: fixed;
+  }
+  p{
+    font-size: 1.25rem;
   }
 }
